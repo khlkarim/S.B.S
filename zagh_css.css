@@ -46,9 +46,9 @@ body{
 	width: 90px;
 }
 
-#title:hover{
+/*#title:hover{
 	letter-spacing: -1px;
-}
+}*/
 .onpage{
 	border:2px solid #457b9d;
 	cursor: pointer;
