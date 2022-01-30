@@ -527,18 +527,12 @@ input[type=number]::-webkit-inner-spin-button {
 /*mobile version*/
 
 
+
 .burger{
 	display: none;
 	background: none;
 	border: none;
 	cursor: pointer;
-}
-.line{
-	background: white;
-	width: 30px;
-	height: 5px;
-	margin: 1.5px;
-	border-radius: 5px;
 }
 
 .navmob{
@@ -549,12 +543,7 @@ input[type=number]::-webkit-inner-spin-button {
 		margin: 0px;
 	}
 	.burger{
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}
-	.midline{
-		width: 15px;
+		display: block;
 	}
 	.navlinks{
 		display: none;
@@ -564,18 +553,19 @@ input[type=number]::-webkit-inner-spin-button {
 		position: fixed;
 		width: 100%;
 		top: 0;
+		height: 12%;
 		z-index: 2;
 		justify-content: space-around;
-		animation: drop 0.5s ease;
+		animation: drop 0.5s;
 	}
 	@keyframes drop{
 		0%{
 			opacity: 0;
-			top: -8vh;
+			top: -10%;
 		}
 		100%{
 			opacity: 1;
-			top: 0vh;
+			top: 0;
 		}
 	}
 	.navmob{
@@ -584,9 +574,9 @@ input[type=number]::-webkit-inner-spin-button {
 		justify-content: space-around;
 		flex-direction: column;
 		position: fixed;
-		top: 12vh;
+		top: 12%;
 		right: 0;
-		height: 88vh;
+		height:88%;
 		background: #457b9d;
 		width: 50%;
 		z-index: 2;
